@@ -4,15 +4,15 @@ Kochab is a job-search assistant with a single stubborn opinion: an honest "no" 
 
 ## One version at a time
 
-Kochab was built in small, reviewable steps, not one big push. Version 0.1 was just the honest scoring and the packaging. Each version after that added one theme and was reviewed before the next began: the story bank and cover notes, study plans, a legitimacy screen, interview prep, then the pipeline that tracks every application, follow-up timing, stage guidance, offer handling, and finally bounded network matching at 1.0.
+Kochab was built in small, reviewable steps, not one big push. Version 0.1 did two things only: it scored how well a role fits you, shown as a handful of justified sub-scores instead of one confident number, and it packaged the tool as installable Claude skills. Each version after that added one capability and was reviewed before the next began: a story bank and cover notes, study plans, a legitimacy screen that flags ghost jobs and scams, interview prep, then a pipeline that holds the state of every application, follow-up timing, stage-by-stage guidance, offer handling, and finally, at 1.0, network matching that surfaces who you already know at a company you are about to apply to.
 
-Every version's reasoning is written down rather than assumed. `ROADMAP.md` records what each release would deliver and why, `CHANGELOG.md` records what actually shipped, and decisions that were settled are marked so they do not get relitigated. If you want to see how a feature came to exist, the history is legible on purpose.
+Every version's reasoning is written down rather than assumed. `ROADMAP.md` records what each release would deliver and why, `CHANGELOG.md` records what actually shipped, and decisions that were settled are marked so they do not get relitigated. If you want to see how a feature came to exist, the history is there to be read.
 
-## Ethics as the architecture, not the disclaimer
+## The ethics are rules, not a disclaimer
 
-The constraints in `ETHICS.md` are not a footer. They are the load-bearing walls. A human applies, the tool never does. It respects every site's terms and does not scrape behind logins. It never fabricates, and it obeys the user's own honesty guardrails even when overstating would score better. Fit is shown as justified sub-scores with a named gap, never a bare number dressed up as objective truth. Thin days are reported honestly rather than padded with manufactured matches.
+The constraints in `ETHICS.md` are not marketing copy, and they are not there to cover anyone. They are rules the tool follows, and the build was not allowed to break them. A human applies, the tool never does. It respects every site's terms and does not scrape behind logins. It never fabricates, and it obeys the user's own honesty guardrails even when overstating would make the application look stronger. Fit is shown as justified sub-scores with a named gap, never a bare number passed off as objective. Thin days are reported as thin, not padded with manufactured matches.
 
-Those rules are restated, in operational language, at every point in the code where a feature could drift. The follow-up nudge has a hard cap and an off switch. The offer helper refuses to invent leverage. The network match only runs for a company you are actually applying to, from contacts you export yourself, never scraped. The honesty is not a promise on the label. It is enforced in the instructions.
+Those rules are restated, in concrete terms, at every point in the instructions where a feature could otherwise drift. The follow-up nudge has a hard cap and an off switch. The offer helper will not invent a competing offer, or any other advantage you do not actually have. The network match only runs for a company you are actually applying to, from contacts you export yourself, never scraped. The honesty is not a promise on the label. It is enforced in the instructions.
 
 ## Built as Claude skills
 
@@ -22,11 +22,11 @@ Kochab ships as a set of Claude skills: folders of Markdown that tell the model 
 
 Kochab was built collaboratively with Claude, working through Claude Code and the Cowork desktop tool. The collaboration was requirements-driven, not hands-off. The direction, the constraints, and the decisions came first and stayed with a human. Each version started from a stated requirement and a defined scope. The rules in `ETHICS.md` were set as hard boundaries the build was not allowed to cross. Every version was reviewed before the next began, and choices that were settled were written down as decisions so they held.
 
-Claude did much of the drafting and the mechanical work. The requirements, the judgment calls, and the sign-off on each step were the author's. The incremental method above is what that looks like in practice: specify, build, review, record, repeat. That discipline is what let a fast collaboration stay honest and legible, and it is the same discipline that makes the tool trustworthy to use.
+Claude did much of the drafting and the mechanical work. The requirements, the judgment calls, and the sign-off on each step were the author's. The incremental method above is what that looks like in practice: specify, build, review, record, repeat. That discipline is what let a fast collaboration stay honest and clear, and it is the same discipline that makes the tool trustworthy to use.
 
 ## Proving it was not just built for one person
 
-A tool shaped by its author's own job search can quietly hard-code that person's assumptions. To check, Kochab is tested against a fully synthetic persona who is nothing like the author: a different field, a different level, a different city, different constraints. The whole loop runs against that fixture, from the first scan through the offer, to confirm nothing is secretly wired to one case. The test data in `fixtures/` is entirely invented, and the repository ships no personal data at all.
+A tool shaped by its author's own job search can end up hard-coding that person's assumptions without anyone noticing. To check, Kochab is tested against a fully synthetic persona who is nothing like the author: a different field, a different level, a different city, different constraints. The whole search runs against that persona, from the first scan through the offer, to confirm nothing is secretly wired to one case. That test data is entirely invented, and the repository ships no personal data at all.
 
 ## What it is not
 
