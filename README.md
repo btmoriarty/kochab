@@ -66,7 +66,7 @@ The `SKILL.md` must sit directly at `<name>/SKILL.md`, not nested a level deeper
 3. **Say "set up my job scan"** and hand over your resume — or **"look into this company"** with a posting.
 4. **Schedule it.** Setup ends by handing you a filled-in scheduled-task prompt to paste; run it daily.
 
-New here? Read [docs/Getting_Started.md](docs/Getting_Started.md) for orientation, then the worked walkthrough (a full session with example outputs) as a styled page ([WALKTHROUGH.html](docs/WALKTHROUGH.html)), a [PDF](docs/WALKTHROUGH.pdf), or [Markdown](docs/WALKTHROUGH.md). A one-page [cheat sheet](docs/CHEATSHEET.pdf) lists every mode and how to trigger it, and a slide overview is in [docs/Kochab_Deck.pptx](docs/Kochab_Deck.pptx).
+New here? Read [docs/Getting_Started.md](docs/Getting_Started.md) for orientation, then the worked walkthrough (a full session with example outputs) as a styled page ([WALKTHROUGH.html](docs/WALKTHROUGH.html)), a [PDF](docs/WALKTHROUGH.pdf), or [Markdown](docs/WALKTHROUGH.md). A one-page [cheat sheet](docs/CHEATSHEET.pdf) lists every mode and how to trigger it, and a slide overview is in [docs/Kochab_Deck.pptx](docs/Kochab_Deck.pptx). Curious how it was made? [How Kochab Was Built](docs/HOW_IT_WAS_BUILT.md) tells the story.
 
 ## Design principles
 
