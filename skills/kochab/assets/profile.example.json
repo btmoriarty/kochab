@@ -1,0 +1,48 @@
+{
+  "contact": {
+    "name": "Jane Q. Candidate",
+    "line": [
+      "Montclair, NJ",
+      "555-555-0100",
+      "jane@example.com",
+      "linkedin.com/in/janecandidate"
+    ]
+  },
+  "summary": "One paragraph, written for this specific target. Say what she does, at what scale, and what she is bringing that this employer needs. No adjectives that could describe anyone.",
+  "skills": [
+    {
+      "label": "Program & portfolio",
+      "items": ["cross-functional execution", "stakeholder alignment", "risk and dependency management"]
+    },
+    {
+      "label": "Domain",
+      "items": ["regulated environments", "audit and controls", "vendor governance"]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Manager",
+      "employer": "Example Corp",
+      "subtitle": "Enterprise Risk Programs",
+      "dates": "Mar 2019 – Present",
+      "bullets": [
+        "One accomplishment per bullet, with the scale attached. What she owned, not what the team did.",
+        "A second bullet that answers a requirement this specific posting names."
+      ]
+    },
+    {
+      "title": "Manager",
+      "employer": "Previous Employer",
+      "dates": "Jun 2014 – Mar 2019",
+      "bullets": [
+        "Reverse chronological. Break a long tenure into its real sub-roles rather than flattening it."
+      ]
+    }
+  ],
+  "publications": [],
+  "patents": [],
+  "education": [
+    "State University, M.S., Information Systems, 2014",
+    "State University, B.A., Economics, 2010"
+  ]
+}

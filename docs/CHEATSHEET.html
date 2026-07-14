@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Kochab Cheat Sheet</title>
+<style>
+  @page { size: Letter landscape; margin: 0.38in; }
+  * { box-sizing: border-box; }
+  html { -weasy-hyphens: none; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #1c2440; margin: 0; font-size: 8.6pt; line-height: 1.32;
+  }
+  /* palette */
+  :root {}
+  .navy { color: #22306b; }
+  /* header */
+  .head { display: flex; align-items: flex-end; justify-content: space-between;
+    border-bottom: 3px solid #22306b; padding-bottom: 6px; margin-bottom: 9px; }
+  .title { font-size: 27pt; font-weight: 800; color: #22306b; letter-spacing: -0.5px; line-height: 1; }
+  .title .sub { font-weight: 400; color: #6b7290; font-size: 15pt; }
+  .tag { color: #45507a; font-size: 8.6pt; margin-top: 3px; max-width: 6.2in; }
+  .tag b { color: #22306b; }
+  .brand { text-align: right; color: #22306b; font-size: 8pt; white-space: nowrap; }
+  .brand .star { font-size: 22pt; color: #e6a532; line-height: 1; }
+  .brand .name { font-weight: 800; font-size: 12pt; letter-spacing: 1px; }
+
+  /* multi-column flow */
+  .cols { column-count: 3; column-gap: 12px; }
+  .card { break-inside: avoid; border: 1px solid #d3d9ee; border-radius: 5px;
+    margin: 0 0 8px; overflow: hidden; background: #fff; }
+  .card > h2 { margin: 0; font-size: 8.4pt; text-transform: uppercase; letter-spacing: 0.6px;
+    color: #fff; background: #22306b; padding: 4px 8px; font-weight: 700; }
+  .card > h2 .n { color: #e6a532; margin-right: 5px; }
+  .card .body { padding: 6px 8px; }
+  .card.alt > h2 { background: #38477f; }
+
+  .mode { margin-bottom: 5px; }
+  .mode:last-child { margin-bottom: 0; }
+  .m { font-weight: 800; color: #22306b; }
+  .say { font-family: "SF Mono", "DejaVu Sans Mono", monospace; font-size: 7.6pt;
+    color: #9a6b12; background: #fbf4e6; border-left: 2px solid #e6a532;
+    padding: 0 4px; border-radius: 2px; }
+  .get { color: #414b70; margin-top: 1px; }
+
+  ul.tight { margin: 2px 0 0; padding-left: 14px; }
+  ul.tight li { margin-bottom: 2px; }
+
+  table.fit { width: 100%; border-collapse: collapse; margin-top: 3px; font-size: 7.8pt; }
+  table.fit td { padding: 1px 3px; border-bottom: 1px solid #e7ebf6; }
+  table.fit td.k { color: #22306b; font-weight: 700; white-space: nowrap; }
+  .band { color: #fff; border-radius: 3px; padding: 0 5px; font-weight: 700; font-size: 7.6pt; }
+  .b-strong { background: #2e7d5b; }
+  .b-stretch { background: #c58a1e; }
+  .b-skip { background: #8a4b52; }
+
+  .foot { margin-top: 8px; background: #22306b; color: #fff; border-radius: 5px;
+    padding: 7px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 8.2pt; }
+  .foot b { color: #ffd580; }
+  .foot .right { text-align: right; color: #c7cef0; }
+  .never b { color: #22306b; }
+  .never .no { color: #8a4b52; font-weight: 700; }
+  .never .yes { color: #2e7d5b; font-weight: 700; }
+</style>
+</head>
+<body>
+
+  <div class="head">
+    <div>
+      <div class="title">Kochab <span class="sub">Cheat Sheet</span></div>
+      <div class="tag"><b>An honest, human-in-the-loop job search that runs inside Claude.</b>
+        It drafts; you always send. No auto-apply, no scraping behind logins, no fake confidence scores, nothing invented. Say things your own way; the phrases below are examples.</div>
+    </div>
+    <div class="brand">
+      <div class="star">&#9733;</div>
+      <div class="name">KOCHAB</div>
+      <div>the star you steer by</div>
+    </div>
+  </div>
+
+  <div class="cols">
+
+    <div class="card">
+      <h2><span class="n">1</span> First run (setup)</h2>
+      <div class="body">
+        Point Kochab at a folder and share your resume. It then:
+        <ul class="tight">
+          <li>interviews you and writes <b>Master_Profile.md</b>, including your <b>honesty guardrails</b></li>
+          <li>seeds a <b>story bank</b> from your resume</li>
+          <li>researches a <b>target-employer list</b> for your field</li>
+          <li>asks how hands-on you want it (the coaching dial)</li>
+        </ul>
+        Then the scan can run on a schedule. Your data stays in your folder.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">2</span> Find &amp; apply</h2>
+      <div class="body">
+        <div class="mode"><span class="m">Scan.</span> <span class="say">"run my job scan"</span>
+          <div class="get">New roles, deduped against your tracker, each with a fit score, a named gap, a why-you-fit line, and a legitimacy check. Thin days reported honestly.</div></div>
+        <div class="mode"><span class="m">Draft.</span> <span class="say">"write a cover note for X"</span>
+          <div class="get">A short note from a real hook and your stories, never a restatement of the posting. You edit and send.</div></div>
+        <div class="mode"><span class="m">Plan.</span> <span class="say">"what should I study?"</span>
+          <div class="get">A study plan shaped by your real weekly hours, aimed at one closable gap, with real resources.</div></div>
+        <div class="mode"><span class="m">Resume.</span> <span class="say">"tailor my resume for X"</span>
+          <div class="get">A variant built by subtraction from your profile. Never adds anything untrue.</div></div>
+      </div>
+    </div>
+
+    <div class="card alt">
+      <h2><span class="n">3</span> Interview &amp; stages</h2>
+      <div class="body">
+        <div class="mode"><span class="m">Interview.</span> <span class="say">"prep me for the X interview"</span>
+          <div class="get">Likely questions mapped to your real stories, questions to ask, thin spots handled honestly. Tuned to the format: screen, panel, or onsite.</div></div>
+        <div class="mode"><span class="m">Stage guidance.</span> <span class="say">"what does this stage expect?"</span>
+          <div class="get">What each phase is for and what comes next, plus how to handle references (who to ask, when, how to brief them).</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">4</span> Run the whole search</h2>
+      <div class="body">
+        <div class="mode"><span class="m">Pipeline.</span> <span class="say">"I applied to X" &nbsp; "where do I stand?"</span>
+          <div class="get">One tracker holding every application's stage, next action, and timing, with a status view of what is due and what collides this week.</div></div>
+        <div class="mode"><span class="m">Momentum.</span> <span class="say">"should I follow up?" &nbsp; "not interested in X"</span>
+          <div class="get">Follow-up timing (capped, never pestering), nudges to get drafts sent, post-call capture, one-step decline.</div></div>
+      </div>
+    </div>
+
+    <div class="card alt">
+      <h2><span class="n">5</span> Offers &amp; process health</h2>
+      <div class="body">
+        <div class="mode"><span class="m">Offer.</span> <span class="say">"I got an offer" &nbsp; "help me negotiate"</span>
+          <div class="get">The whole offer weighed against your priorities and floor, and an honestly-anchored counter drafted for you to send. Never fabricated leverage.</div></div>
+        <div class="mode"><span class="m">Process health.</span> <span class="say">"I got rejected" &nbsp; "how is my search going?"</span>
+          <div class="get">Honest rejection recovery, a gracious withdrawal note, and a light read of your own funnel with no false precision.</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">6</span> Network (bounded)</h2>
+      <div class="body">
+        <div class="mode"><span class="m">Network.</span> <span class="say">"do I know anyone at X?"</span>
+          <div class="get">Contacts from your own LinkedIn export or a paste, matched only to an employer you intend to apply to, with a warm outreach note to send yourself. Never scraped, never a blanket scan.</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">7</span> Coaching dial</h2>
+      <div class="body">
+        <div class="mode"><span class="say">"be more hands-on" &nbsp; "just hold things, let me ask"</span>
+          <div class="get">Turns how much Kochab nudges and coaches up or down. <b>Light by default.</b> It changes how much Kochab speaks, never how honest it is.</div></div>
+      </div>
+    </div>
+
+    <div class="card alt">
+      <h2><span class="n">8</span> How fit is scored</h2>
+      <div class="body">
+        Six sub-scores, 0 to 3 each, shown together with a named gap. Never a bare number or a percentage.
+        <table class="fit">
+          <tr><td class="k">core-skill</td><td>level</td><td>domain</td></tr>
+          <tr><td class="k">location</td><td>mission</td><td>screens</td></tr>
+        </table>
+        <table class="fit">
+          <tr><td><span class="band b-strong">Strong</span></td><td>14&ndash;18, no zero on core-skill, level, or screens</td></tr>
+          <tr><td><span class="band b-stretch">Stretch</span></td><td>9&ndash;13 (or higher with one capping zero)</td></tr>
+          <tr><td><span class="band b-skip">Skip</span></td><td>8 or below, or breaks a hard no</td></tr>
+        </table>
+        <div class="get">A zero on core-skill, level, or screens caps a role at Stretch, however high the total.</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="n">9</span> The rules that never bend</h2>
+      <div class="body never">
+        <div><span class="no">Never:</span> auto-submits, fills a form, scrapes behind a login, invents a skill or credential, or shows a fit score as an objective number.</div>
+        <div style="margin-top:3px"><span class="yes">Always:</span> tells you the truth. It will call a role a Skip, tell you when you do not clear a screen, and report a day with nothing new. That honesty is the point.</div>
+        <div style="margin-top:3px"><b>Your data</b> stays in your folder, on your machine, and is never shared.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    <div>Kochab drafts, researches, and organizes. <b>You decide and you send, every time.</b></div>
+    <div class="right">A set of Claude skills &bull; see ETHICS.md for what this project will not do</div>
+  </div>
+
+</body>
+</html>

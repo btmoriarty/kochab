@@ -1,0 +1,25 @@
+# OS / editor cruft
+.DS_Store
+*.swp
+*.swo
+
+# Python bytecode (from the resume builder and its tests)
+__pycache__/
+*.pyc
+
+# Ephemeral maintainer handoff, not for the public repo
+/REVIEW_HANDOFF.md
+
+# Personal search data must never be committed.
+# The only copies in this repo are synthetic, under fixtures/.
+/Master_Profile.md
+/Application_Tracker.md
+/Story_Bank.md
+/Target_Employers.md
+/Discovered_Employers.md
+/Contacts.md
+/Connections.csv
+/job_scan_*.md
+/kochab_scan_*.md
+/Study_Plan_*.md
+/Resume_*.docx

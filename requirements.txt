@@ -1,0 +1,6 @@
+# Kochab has no runtime dependencies as a set of Claude skills.
+# This file covers only the optional resume builder (skills/kochab/assets/resume_builder.py),
+# which renders a PDF with WeasyPrint. Install inside a virtualenv; see that file's header
+# for the native libraries WeasyPrint needs on each platform. Requires Python 3.9+.
+
+weasyprint>=60,<70
