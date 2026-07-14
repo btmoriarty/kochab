@@ -18,9 +18,11 @@ Those rules are restated, in operational language, at every point in the code wh
 
 Kochab ships as a set of Claude skills: folders of Markdown that tell the model how to run each part of the search, plus one small Python script that renders a resume to PDF. There is no server and no account. The tool reads and writes only inside a folder you point it at, so your profile, tracker, and contacts stay on your machine.
 
-## Built with Claude, in the open
+## Built with Claude, requirements first
 
-Kochab was built collaboratively with Claude, working through Claude Code and the Cowork desktop tool. The incremental method above is partly a response to that: building one small version at a time, writing down the rationale, and reviewing each step kept a fast-moving collaboration honest and legible. The same discipline that makes the tool trustworthy for a user made it maintainable to build.
+Kochab was built collaboratively with Claude, working through Claude Code and the Cowork desktop tool. The collaboration was requirements-driven, not hands-off. The direction, the constraints, and the decisions came first and stayed with a human. Each version started from a stated requirement and a defined scope. The rules in `ETHICS.md` were set as hard boundaries the build was not allowed to cross. Every version was reviewed before the next began, and choices that were settled were written down as decisions so they held.
+
+Claude did much of the drafting and the mechanical work. The requirements, the judgment calls, and the sign-off on each step were the author's. The incremental method above is what that looks like in practice: specify, build, review, record, repeat. That discipline is what let a fast collaboration stay honest and legible, and it is the same discipline that makes the tool trustworthy to use.
 
 ## Proving it was not just built for one person
 
