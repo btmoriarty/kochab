@@ -20,7 +20,7 @@ A skill is just a folder with a `SKILL.md` at its root. Install it wherever you 
 - **Claude Code:** clone the repo, then link the skill into your skills directory so Claude Code discovers it:
 
   ```bash
-  git clone <repo-url> kochab
+  git clone https://github.com/btmoriarty/kochab.git
   ln -s "$PWD/kochab/skills/kochab" ~/.claude/skills/kochab
   ```
 

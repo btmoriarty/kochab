@@ -46,7 +46,7 @@ A skill is a folder with a `SKILL.md` at its root; the agent reads the descripti
 **Claude Code.** Skills live in `~/.claude/skills/<name>/SKILL.md` (personal, available in every project) or `.claude/skills/<name>/` (scoped to one repo). Clone this repo and link or copy the skill folders in:
 
 ```bash
-git clone <this-repo-url> kochab
+git clone https://github.com/btmoriarty/kochab.git
 cd kochab
 
 # personal install, all projects (symlink so `git pull` keeps them current):
