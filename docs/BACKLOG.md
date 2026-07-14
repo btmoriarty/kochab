@@ -75,6 +75,12 @@ Signal is how strongly and how often the need has surfaced. Rows seeded from the
 | Search-while-employed vs. quit-and-search decision support | A high-stakes life decision the tool can inform honestly | Candidate | roadmap |
 | Handling a large resume gap | Adjacent to existing tailoring and honesty guardrails, so it may pull earlier than post-1.0 | Candidate (may pull earlier) | roadmap |
 
+## Post-1.0 — Capture and scoring refinements
+
+| Candidate | The need underneath | Status | Signal |
+|---|---|---|---|
+| Comp range and comp-agnostic option in setup | Setup captures a comp **floor** and a comp-vs-mission **ranking**, but not a target range or ceiling, and "comp-agnostic" is only expressible indirectly (mission-first, no floor). Some people think in a band and want to say so plainly. Add an optional comp range and an explicit comp-agnostic setting to the setup interview and `Master_Profile.md`, feeding the location/comp handling in the scan. Small, additive; does not touch a non-negotiable | Candidate | maintainer, direct (2026-07-14) |
+
 ---
 
 ## Intake: turning a roadmap-interview into backlog rows
