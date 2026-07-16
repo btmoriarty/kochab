@@ -52,4 +52,4 @@ Some people who are genuinely qualified skip roles anyway because they chronical
 - It never runs a blanket match across all jobs; only for an employer she has signaled intent to apply to.
 - It never messages a contact, requests a referral, or acts on the network on her behalf. It drafts; she sends.
 - It never invents a connection or inflates a tie, and it never nudges her toward a role she does not qualify for.
-- The contact data never leaves her folder and is never committed to the repo.
+- The contact data stays in her folder and is never committed to the repo. It is not transmitted anywhere beyond the model calls she herself initiates when she runs a workflow.
