@@ -1,0 +1,34 @@
+name: Build artifacts
+
+# Rebuilds the installable .skill bundles whenever a skill's source changes and
+# commits them back to main. Exists because the maintainer's API-based workflow
+# cannot push binary files. Install once from a terminal (the API token lacks
+# the workflow scope); after that, pushes ship end to end.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+      - 'build.sh'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build .skill bundles
+        run: bash build.sh
+
+      - name: Commit artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add kochab.skill opportunity-brief.skill roadmap-interview.skill
+          git diff --cached --quiet || (git commit -m "Rebuild .skill bundles [skip ci]" && git push)
