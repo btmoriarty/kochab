@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.0.1 — 2026-07-16
+
+Release-integrity fixes. No feature scope; corrects instructions the model reads at runtime (PR #1).
+
+- `skills/kochab/SKILL.md`: removed stale pre-release version tags from runtime instructions; the Momentum, stage-guidance, and process-health boundaries now point at the shipped modes (Steps G, H, J) instead of v0.7/v0.8/v0.9, and the intervention dial reads as shipped.
+- `skills/kochab/references/network.md`: corrected the contact-data privacy line; data stays in the user's folder and is never committed, but it is processed by the model calls the user initiates.
+- Deferred to a later pass: persona-pronoun neutralization, separating version history from runtime instructions, and a `.skill`/source drift check.
 ## Unreleased — 2026-07-11
 
 Maintainer tooling and backlog.
