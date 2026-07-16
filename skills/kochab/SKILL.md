@@ -170,7 +170,7 @@ Channels used. How many genuinely new roles, by lane. How many were already in t
 
 If nothing new turned up, say that. Thin days are the normal case and reporting them accurately is the point.
 
-If the tracker has any Active applications, close with a **one-line pipeline snapshot**: how many are active against her capacity target, and the single soonest next action with its date. State, not a nag: it is there so the whole search stays visible on a thin scan day, not to push her to act. The full timing view stays in Pipeline mode (Step F), on request. Do not generate follow-up prompts here; follow-up timing is a later release.
+If the tracker has any Active applications, close with a **one-line pipeline snapshot**: how many are active against her capacity target, and the single soonest next action with its date. State, not a nag: it is there so the whole search stays visible on a thin scan day, not to push her to act. The full timing view stays in Pipeline mode (Step F), on request. Do not generate follow-up prompts here; follow-up timing lives in Momentum mode (Step G) and surfaces on the weekly-summary run, not the daily scan close.
 
 ---
 
@@ -213,7 +213,7 @@ Full method in `references/interview_prep.md`. In brief:
 
 # Step F: Pipeline (on request, whenever she reports an event or asks where things stand)
 
-Full method in `references/pipeline.md`. The pipeline is the working-memory offload: one file, `Application_Tracker.md`, holds the state of every parallel application, the next action for each, and how their timing collides, so she does not have to. v0.6 holds and shows that state. It does not tell her when to follow up (v0.7), coach a stage (v0.8), or diagnose her funnel (v0.9). In brief:
+Full method in `references/pipeline.md`. The pipeline is the working-memory offload: one file, `Application_Tracker.md`, holds the state of every parallel application, the next action for each, and how their timing collides, so she does not have to. Pipeline mode holds and shows that state. It does not tell her when to follow up (that is Momentum, Step G), coach a stage (Stage guidance, Step H), or diagnose her funnel (Process health, Step J). In brief:
 
 1. **Read the tracker first.** Three tables: **Active** (applied and everything live after it, with a Stage of Applied, Screen, Interview, Final, or Offer), **Watching** (scored but not yet sent, where scan finds land), and **Closed** (the archive; never deleted). Every role in any table is already known to the scan.
 2. **Make the smallest write that matches what she said.** Log an application (Watching row moves to Active, Stage Applied). Advance a stage. Set or change a next action and its due date. Close a role with an outcome (rejected, withdrawn, declined, accepted). Add a watch by hand. Match the role she names to a row by employer and role family, the same way the scan dedups; when unsure which row, ask rather than guess. Record only what she reports, never invent a status or a follow-up date, and confirm the one thing that changed.
@@ -224,14 +224,14 @@ Full method in `references/pipeline.md`. The pipeline is the working-memory offl
 
 # Step G: Momentum (on request, to keep the search moving)
 
-Full method in `references/momentum.md`. Where Pipeline mode (Step F) holds and shows state, Momentum acts on it to close the quiet gaps where a search stalls. Everything here is a suggestion she acts on; the tool never sends, submits, or contacts anyone. Light-touch by default: the dial that tunes intensity up or down is v0.9, so until then keep it conservative. Four beats:
+Full method in `references/momentum.md`. Where Pipeline mode (Step F) holds and shows state, Momentum acts on it to close the quiet gaps where a search stalls. Everything here is a suggestion she acts on; the tool never sends, submits, or contacts anyone. Light-touch by default: intensity is tuned by the intervention dial (`references/intervention_dial.md`), conservative at its light default. Four beats:
 
 1. **Get applications out the door.** Surface drafted-not-sent roles (a Watching row whose next action is to finish or send): name the one thing left, offer to finish the draft (Step C), confirm any real posting deadline. Never manufacture urgency, and never submit.
 2. **Follow-up timing.** Suggest *when* she reaches out, and offer to draft the note. Default cadence is conservative: after applying, a light check-in after about a week and at most one more, then rest; after a call, a thank-you within a day, then a status check on the employer's stated timeline or about a week if none was given. An employer-stated timeline always wins. Cap at two nudges per waiting period, honor "no follow-ups on this one," and never guilt-trip a passed date. Surface on request and once a week on the weekly-summary run, never in the daily note. How actively follow-ups surface follows the intervention dial (`references/intervention_dial.md`); the caps and off switch hold at every setting.
-3. **Post-call next actions.** Right after she reports a call happened, run a short capture: advance the stage, set a thank-you as the immediate next action, schedule the next touch from the timeline they gave, and note one line on how it went. Capture and schedule only; how to run the next round is stage prep (v0.8).
-4. **Triage a role she is not interested in.** "I'm not interested in X" moves the row to Closed with outcome Declined in one step. Offer to note a one-line reason for the search history; do not push for it, and do not argue a high fit back at her. Declining frees capacity. Withdrawing from a live process with a careful message (rescinding) is a heavier, later beat (v0.9).
+3. **Post-call next actions.** Right after she reports a call happened, run a short capture: advance the stage, set a thank-you as the immediate next action, schedule the next touch from the timeline they gave, and note one line on how it went. Capture and schedule only; how to run the next round is stage prep (Step H).
+4. **Triage a role she is not interested in.** "I'm not interested in X" moves the row to Closed with outcome Declined in one step. Offer to note a one-line reason for the search history; do not push for it, and do not argue a high fit back at her. Declining frees capacity. Withdrawing from a live process with a careful message (rescinding) is a heavier beat handled in Process health (Step J).
 
-Writes go through the pipeline operations in Step F and save `Application_Tracker.md`. Momentum does not coach a stage (that is Step H), diagnose the funnel (v0.9), or handle a rejection or clean rescind (v0.9).
+Writes go through the pipeline operations in Step F and save `Application_Tracker.md`. Momentum does not coach a stage (that is Step H), diagnose the funnel, or handle a rejection or clean rescind (those are Process health, Step J).
 
 ---
 
