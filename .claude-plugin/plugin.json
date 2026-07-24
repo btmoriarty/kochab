@@ -1,0 +1,9 @@
+{
+  "name": "kochab",
+  "version": "1.0.1",
+  "description": "A personalized resume-based job-search assistant that runs a recurring scan and everything downstream of it: tailoring, study plans, interview prep, and pipeline tracking. Bundles the kochab, opportunity-brief, and roadmap-interview skills. You always send.",
+  "author": { "name": "Brian Moriarty", "email": "btmoriarty@gmail.com" },
+  "homepage": "https://github.com/btmoriarty/kochab",
+  "license": "MIT",
+  "keywords": ["job-search", "resume", "career", "claude-skill"]
+}
