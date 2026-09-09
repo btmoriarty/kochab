@@ -29,9 +29,9 @@ Signal is how strongly and how often the need has surfaced. Rows seeded from the
 | Directional gap line in the scan | She sees a fit rating and a named gap, but not what closing the gap would do; making the gap forward-looking turns a static rating into a next step. Directional pointer only, not a curriculum pitch (see v0.5.1 in `ROADMAP.md`) | Shipped | maintainer, direct |
 | Tunable study plans | A recommendation is only useful if she can act on it at her real pace; the same skill needs a different plan at 15 minutes a day than at 4 hours a day, so time budget must reshape the plan, not just its length (see v0.5.2 in `ROADMAP.md`) | Shipped | maintainer, direct |
 
-## From field use, 2026-09-09 (Lerna instance)
+## From field use, 2026-09-09
 
-*A single day of heavy use surfaced these. Each is tied to an observed failure, not a wish. Detail in the session record; the two shipped-today items are already in `skills/kochab/references/`.*
+*A single day of heavy use on one live instance surfaced these. Each is tied to an observed failure, not a wish. Details are held in the maintainer's private notes; the two shipped-today items are already in `skills/kochab/references/`.*
 
 | Candidate | The need underneath | Status | Signal |
 |---|---|---|---|
