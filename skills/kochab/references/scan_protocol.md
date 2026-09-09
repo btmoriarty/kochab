@@ -63,7 +63,7 @@ Read the weighting from `Master_Profile.md`, never hard-code it. If her profile 
 
 The raw /18 orders roles **within** a band, so the ranked list is finer than three buckets. Ties break on dimension 1, then dimension 6.
 
-**Presentation, per role.** Show the six sub-scores and the total together, always. Never the total alone, never a percentage, never a decimal.
+**Presentation, per role.** Show the six sub-scores and the total together, always. Never the total alone, never a percentage, never a decimal. **How the role is written up for the reader is governed by `references/writing_up_a_role.md`: required split from preferred, an explicit answer to whether they clear the bar to apply, evidence balanced on both sides, and what clears stated first. Read it before writing any ranked role.**
 
 > **Acme, Program Manager, Risk** — Stretch (11/18)
 > skill 2 · level 3 · domain 1 · location 3 · mission 1 · screens 1
@@ -96,11 +96,49 @@ The Acme example above is the other case: its gaps are domain experience and mis
 
 ## Verification
 
-Before sharing any posting link, confirm it is live. Career pages are frequently JavaScript-rendered and return an empty shell to a plain fetch. Confirm through a job-board mirror, a search result, or a rendering browser tool. If you cannot confirm, label it **UNVERIFIED** and say so. Do not guess.
+**Only an employer-controlled surface proves a posting is live.** That means the employer's own applicant tracking system or careers board. A mirror does not count: not The Muse, Built In, Ladders, Remote Rocketship, TealHQ, Simplify, Y Combinator's Work at a Startup, Glassdoor, Dice, or ZipRecruiter. A mirror yields **UNVERIFIED**, never LIVE.
+
+*Field evidence, 2026-09-09. An earlier version of this section accepted "a job-board mirror, a search result, or a rendering browser tool." Working from a mirror, a scan ranked a role first for the day, wrote two cover-note drafts for it, and built a tailored resume. The employer's own system then returned "This job is no longer available." The mirror was rendering a posting that had closed. On the same day, five more tracked Strong rows died on first check: six of fourteen, or 43%.*
+
+Three rules follow from that.
+
+- **Never rank at the top of a list, draft materials for, or build a resume for an unverified row.** Verification outranks score. A Strong with unconfirmed liveness is a lead, not a Strong.
+- **Report the verified count, not the row count.** "Thirty-two Strong roles" was not a fact. Twelve to fifteen verified live was.
+- **Liveness decays.** Every row carries a `last_verified` date. Past **21 days** it is `STALE` and cannot be ranked, counted in a total, or drafted for until it is re-checked. A weekly liveness sweep of the backlog is worth more than a marginal discovery channel; run it in place of one.
+
+### Reading the signal on each system
+
+| System | Dead | Live | Trap |
+|---|---|---|---|
+| Greenhouse | 302 to `?error=true` | Full req body renders | Absence from a board index read in full is strong evidence, not proof |
+| Ashby | Bare metadata, no job fields | Full req in page metadata even though the body is JavaScript-only | |
+| Lever | Req and board both render | Same | |
+| Workday, Avature, Oracle Cloud, Eightfold | No signal | No signal | JavaScript-only. An empty shell means nothing either way. Say so rather than guessing |
+| Teamtailor, Comeet, custom boards | Varies | Varies | Some render client-side and return an unpopulated template. An unreachable board is not an empty one; never record a null against an employer whose board cannot be read |
+
+One system-specific trap worth carrying: on at least one Greenhouse-backed board, a 302 to the board root is normal for live requisitions. Confirm the redirect pattern against a known-live req before treating a redirect as death.
+
+### Two failure modes that look like data
+
+- **An index label is a lead, not a fact.** A board index listed one job title and identifier; fetching that identifier returned a different job with a different location. Open the body.
+- **Never take a number from a search-result summary.** A summariser reported "approximately 1% of reps meet quota" for two different companies. Both pages render that field as `--` behind a contribution gate. One company's own badge said attainment far exceeds the average. Open the page or do not cite the number.
+
+If liveness cannot be confirmed, label it **UNVERIFIED** and say so. Do not guess.
 
 Watch for reposts. A req that has been live for four months is telling you something.
 
 Run the **legitimacy check** in `references/legitimacy_check.md` on each new posting as part of verification: is the employer real and operating, is the req live and recent, does the comp band make sense, is it a direct hire or a staffing-firm repost, are there scam signals. Attach a short caution to anything that is not a clean, live, direct role. A clear scam does not enter the ranked list; it goes in a short "screened out as likely not real" note so she sees it was checked. A legitimacy flag is a caution, not a verdict, except for clear scams.
+
+## Tooling discipline
+
+**Test the environment before making a claim about it.** Four consecutive runs of one instance declared the browser unavailable "at the network layer," on the strength of a single refused control URL. The control was `example.com`, a reserved documentation domain that some stacks block specifically. The browser worked the whole time. Cost: four days of coverage.
+
+- **Never use `example.com` as a control.** Test a real destination plus one real job board.
+- **Report which failure signature you hit**, because three different causes look alike: instant refusal, slow timeout, and clean load with a blank body. The third is usually bot detection.
+- **Pagination is a fetch limitation, not a browser limitation.** Where a plain fetch refuses a query string, a browser will page through a board normally. Three page loads on one board turned a single result into seven in-region roles that had been reachable for days.
+- **A bot-detection wall is a stop sign, not a puzzle.** Record it as blocked and move on. Never work around bot detection or a CAPTCHA. When it blocks a check twice, escalate it to a person with the exact action and its cost rather than carrying it another run; one posting was carried five runs behind a blank page and a person resolved it in thirty seconds.
+- **Walk the board index by default** on any tracked employer. Tracking an employer and having read their board are different states; record which one is true. One employer in a file had three tracked rows against a board carrying roughly 330 openings.
+- **An unreachable board is not an empty one.** Never record a null against an employer whose board could not be read.
 
 ## Honest reporting
 
