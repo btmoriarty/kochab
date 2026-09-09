@@ -126,7 +126,9 @@ Score every new role on the six-dimension rubric in `references/scan_protocol.md
 
 Show the six sub-scores and the total together, always. Never a bare number, never a percentage. The score ranks the list and shows its reasoning; it does not replace the gap sentence.
 
-Give each ranked role a one-line **why-you-fit** rationale alongside the gap: the single strongest reason she is a real candidate here, in her terms. The gap says what is missing; the why-you-fit says what is already true. Both, always, so the picture is honest in both directions.
+Give each ranked role a **why-you-fit** alongside the gap, carrying the same weight of evidence: if the gap quotes the posting three times, the fit quotes it three times. The gap says what is missing; the why-you-fit says what is already true. Both, always, at the same length, so the picture is honest in both directions rather than only in one.
+
+**Split required qualifications from preferred ones, and answer plainly whether she clears the bar to apply.** A preferred qualification is not a screen and must never be written up as one. State what clears (travel, on-call, work model, band, stage) before any risk. Full method in `references/writing_up_a_role.md`; read it before writing any ranked role.
 
 On every Stretch role, add one **directional line** after the gap: the single dimension holding it below Strong and what closing it would do to the rating. Only nominate a lift that is a concrete, studiable skill she can go learn and get good at (a Python course, SQL, a named tool, a real cert screen). If the gap is experience (domain seasoning, tenure) or structural (mission, level, location), say plainly that no course moves it rather than inventing a study target. Claim a move to Strong only when the arithmetic supports it (14 or more, no capping zero on core-skill, level, or screen-clearance). It is a pointer, not a plan: the full study plan stays on demand and in the weekly summary. Method in `references/scan_protocol.md`.
 
@@ -141,7 +143,7 @@ Rank by the /18 within each band, then by whatever she said she values, in the o
 - **Reuse an existing resume variant** if one fits. Check the folder before building anything.
 - If no variant fits, build a new one with `assets/resume_builder.py`. See `references/resume_builder_notes.md`.
 - Draft a short "Why this organization" paragraph, 200 to 400 words, grounded in the profile and obeying the voice rules.
-- **Name any screen she may not clear** (a certification, a degree field, a years-in-domain bar) so she decides rather than discovers it in a rejection.
+- **Name any screen she may not clear** (a certification, a degree field, a years-in-domain bar) so she decides rather than discovers it in a rejection. Put it in the right group first: a *required* qualification she misses is a screen, a *preferred* one is not.
 
 ## B5. Gap analysis and study recommendations
 
